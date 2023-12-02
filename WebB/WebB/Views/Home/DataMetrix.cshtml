@@ -1,0 +1,13 @@
+﻿@using WebB.Classes;
+@model List<MisterOne>
+@{
+    ViewBag.Title = "Вернуть ваши метрики";
+    ViewData["Title"] = "";
+}
+<main aria-labelledby="title">
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <p>@Model[i].Id</p>
+        <p>@Model[i].Summary</p>
+    }
+</main>
